@@ -73,17 +73,19 @@ public class CalculadoraIMC {
 
                 float IMC = Massa/ (tamanho * tamanho);
 
-                String Classificacao;
-                if (IMC<18.5%2F){
+                String Classificacao = "";
+                if (IMC<18.5f){
                     Classificacao = "Baixo peso";
-                } else if (IMC>= 18.5%2F && IMC< 24.99%2F){
+                } else if (IMC>= 18.5f && IMC< 24.99){
                     Classificacao = "Normal";
-                } else if(IMC>=25%2F && IMC<29.99%2F){
+                } else if(IMC>=25f && IMC<29.99F){
                     Classificacao = "Sobre Peso";
-                } else{
+                } else if (IMC>=30.00F){
                     Classificacao = "Obesidade";
                 }
                 PrimeiraJanela.add(Resultado);
+
+                
 
 
 
@@ -110,3 +112,4 @@ public class CalculadoraIMC {
 
     }
 }
+
